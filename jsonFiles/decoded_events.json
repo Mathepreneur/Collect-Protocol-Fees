@@ -1,0 +1,42 @@
+[
+  {
+    "transactionHash": "0x6b3e92bc3bd0f968b59111b58f2501b554026bed6993b1bc63fd49c102fd7ea3",
+    "token0Amount": "9825537777882726",
+    "token1Amount": "9825537777882726"
+  },
+  {
+    "transactionHash": "0xe9870b2c47ec819975c1e87746cc88b517cc019fe3dc426f75a8f0dafa1f8e2d",
+    "token0Amount": "4900260770763081283",
+    "token1Amount": "3675465218676953962"
+  },
+  {
+    "transactionHash": "0x7c5eb56db6dd65057122356e34c3f1c872c2948de161040da2e31dabd98bd7c0",
+    "token0Amount": "18038",
+    "token1Amount": "574486"
+  },
+  {
+    "transactionHash": "0xa4c00c5f833f0d6575b5ce6b61dba168499236316f57eb972780530b02c20eea",
+    "token0Amount": "0",
+    "token1Amount": "1041695823907753188"
+  },
+  {
+    "transactionHash": "0x0797314ea33662aee45c9c291b938ccab45f146178c7574a560f0f4a0b97153f",
+    "token0Amount": "7914804414747822175",
+    "token1Amount": "5283741702736805352"
+  },
+  {
+    "transactionHash": "0x1c9b7abcfa7f5d4a920fa93908a349d9ec248c80890dd91dcc6048e11a04e110",
+    "token0Amount": "23199525",
+    "token1Amount": "183061731"
+  },
+  {
+    "transactionHash": "0xb7a2a1dce41df7edab57a136e03b65a4c8ce97be656e911f5c0634955676edf6",
+    "token0Amount": "0",
+    "token1Amount": "30570572054157"
+  },
+  {
+    "transactionHash": "0xc55c70cda998452e39cb7c8e7e0ecc98be662e2198788812ac0880af9cd22ff3",
+    "token0Amount": "5571834909846282",
+    "token1Amount": "5583804293119335"
+  }
+]

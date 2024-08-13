@@ -1,0 +1,224 @@
+[
+  {
+    "inputs": [
+      { "internalType": "address", "name": "chosenOwner", "type": "address" },
+      {
+        "internalType": "address",
+        "name": "chosenOptionFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "chosenTransactionFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "chosenProtocolFee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "owner", "type": "address" }
+    ],
+    "name": "AlreadyTheOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [{ "internalType": "uint256", "name": "fee", "type": "uint256" }],
+    "name": "IncorrectFeeInitialization",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "caller", "type": "address" },
+      { "internalType": "address", "name": "owner", "type": "address" }
+    ],
+    "name": "NotTheOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "caller", "type": "address" },
+      { "internalType": "address", "name": "pendingOwner", "type": "address" }
+    ],
+    "name": "NotThePendingOwner",
+    "type": "error"
+  },
+  { "inputs": [], "name": "ZeroAddress", "type": "error" },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "AcceptOwner",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "option",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "poolPair",
+        "type": "address"
+      }
+    ],
+    "name": "Create",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "pendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "SetOwner",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "acceptOwner",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "token0", "type": "address" },
+      { "internalType": "address", "name": "token1", "type": "address" }
+    ],
+    "name": "create",
+    "outputs": [
+      { "internalType": "address", "name": "pair", "type": "address" }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "optionPair", "type": "address" }
+    ],
+    "name": "get",
+    "outputs": [
+      { "internalType": "address", "name": "pair", "type": "address" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "token0", "type": "address" },
+      { "internalType": "address", "name": "token1", "type": "address" }
+    ],
+    "name": "get",
+    "outputs": [
+      { "internalType": "address", "name": "pair", "type": "address" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "name": "getByIndex",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "numberOfPairs",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "optionFactory",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "parameter",
+    "outputs": [
+      { "internalType": "address", "name": "poolFactory", "type": "address" },
+      { "internalType": "address", "name": "optionPair", "type": "address" },
+      {
+        "internalType": "uint256",
+        "name": "transactionFee",
+        "type": "uint256"
+      },
+      { "internalType": "uint256", "name": "protocolFee", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingOwner",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "protocolFee",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "chosenPendingOwner",
+        "type": "address"
+      }
+    ],
+    "name": "setPendingOwner",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "transactionFee",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
